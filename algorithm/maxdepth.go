@@ -6,7 +6,7 @@ type TreeNode struct {
 	Right *TreeNode
 }
 
-func maxDepth(root *TreeNode) int {
+func MaxDepth(root *TreeNode) int {
 	if root == nil {
 		return 0
 	}

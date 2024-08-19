@@ -23,33 +23,7 @@ var (
 	loop = 0
 )
 
-func quick(data []int, left, right int) {
-	if left < right {
-		p := partition(data, left, right)
-		quick(data, left, p-1)
-		quick(data, p+1, right)
-	}
-}
-
-func binary(arr []int, target int) int {
-	left, right := 0, len(arr)-1
-
-	for left <= right {
-		middle := left + (right-left)/2
-
-		if arr[middle] == target {
-			return target
-		} else if arr[middle] > target {
-			right = middle - 1
-		} else {
-			left = middle + 1
-		}
-	}
-
-	return -1
-}
-
-func matrix(n int) [][]int {
+func Matrix(n int) [][]int {
 	ret := make([][]int, 0, n)
 	for i := 0; i < n; i++ {
 		item := make([]int, 0, n)
