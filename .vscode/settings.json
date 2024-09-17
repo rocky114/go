@@ -1,9 +1,9 @@
 {
     "gopls": {
         "build.buildFlags": [
-            "-tags=debug"
+            "-tags=dev"
         ],
         "ui.semanticTokens": true
     },
-    "go.buildFlags": [],
+    "go.buildTags": "dev"
 }

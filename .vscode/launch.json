@@ -10,9 +10,8 @@
             "request": "launch",
             "mode": "auto",
             "program": "${workspaceFolder}",
-            "args": [],
             "buildFlags": [
-                "-tags=debug"
+                "-tags=dev"
             ]
         }
     ]

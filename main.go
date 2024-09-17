@@ -2,12 +2,10 @@ package main
 
 import (
 	"fmt"
+
+	"github.com/rocky114/golang/config"
 )
 
 func main() {
-	data := []int{1, 2, 3, 4, 5, 6}
-
-	a := data[1:3:4]
-
-	fmt.Println(a, len(a), cap(a))
+	fmt.Println(config.Environment)
 }
